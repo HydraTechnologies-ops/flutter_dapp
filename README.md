@@ -1,3 +1,5 @@
+This is a mobile Dapp used to communicate with smart contracts located on the Ganache local environment. 
+
 # flutter_dapp
 ![](Images/HelloHydra.png)
 
