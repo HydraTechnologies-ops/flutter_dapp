@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dapp/contract_linking.dart';
-import 'package:flutter_dapp/helloUI.dart';
+import 'package:flutter_dapp/hello.dart';
 import 'package:provider/provider.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-void main() {
+void main() async {
+  await dotenv.load(fileName: "../assets/.env");
   runApp(const MyApp());
 }
 
@@ -20,7 +22,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           brightness: Brightness.dark,
           primaryColor: Colors.cyan[400],
-          accentColor: Colors.deepOrange[200],
         ),
         home: HelloUI(),
       ),
