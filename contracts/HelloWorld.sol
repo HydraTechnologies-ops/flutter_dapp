@@ -9,6 +9,5 @@ string  public yourName;
 
     function setName (string memory nm) public {
         yourName = nm;
-
     }
 }
